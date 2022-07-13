@@ -379,13 +379,18 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h1 class="social-title">Подпишитесь на рассылку</h1>
-                        <button class="button sub" type="button">Подписаться <svg class="icon-footer">
+                    <form class="footer-field">
+                        <label class="footer-title">Подпишитесь на рассылку</label>
+                        <div class="footer-form">
+                        
+                        <input class="footer-input" type="email" name="email" placeholder="E-mail">
+                        <button class="button-sub" type="submit">Подписаться 
+                            <svg class="icon-send">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg></button>
                         
                     </div>
+                </form>
             </div>
             
             </address>
@@ -393,7 +398,7 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-close-button" type="button" data-modal-close>
+                <button class="close-button" type="button" data-modal-close>
                     <svg class="icon-hrest">
                         <use href="./images/icons.svg#icon-hrest"></use>
                     </svg>
@@ -432,9 +437,15 @@
                         <textarea class="form-comment" type="text" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                     </div>
                     
-                        <label for="condition" class="form-condition"> <input id="condition" type="checkbox" name="condition">Соглашаюсь с рассылкой и принимаю
+                        <label class="form-condition" for="condition">
+                        <input class="checkbox visually-hidden" id="condition" type="checkbox" name="condition">Соглашаюсь с рассылкой и принимаю
                         <a class="form-link" href="#">Условия договора</a>
-                       
+                        <svg class="icon-uncheck">
+                            <use href="./images/icons.svg#icon-uncheck"></use>
+                        </svg>
+                        <svg class="icon-check">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
                        </label>
                     
                     <button class="button send" type="submit">Отправить</button>
